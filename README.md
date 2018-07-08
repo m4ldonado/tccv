@@ -39,11 +39,12 @@ online](http://www.entidi.com/assets/pdf/nicola.en.pdf).
 
 ### Personal box on top
 
-The `\personal` box by default follows the text flow. If you want to
+The `\personal` box by default follows the text flow. The Github url and url fields can be empty.  If you want to
 affix it on the top (or on the bottom) you can make it a float, e.g.:
 
     \begin{figure}[b] % Push the figure at the bottom; use t for top
-    \personal[url]
+    \personal[github url]
+             {url}
              {address}
              {phone}
              {email}
@@ -57,7 +58,8 @@ Alternatively you can use the myfloat package:
 
     % Then wrap your personal data using the newly created custom float
     \begin{myfloat}
-    \personal[url]
+    \personal[github url]
+             {url}
              {address}
              {phone}
              {email}
